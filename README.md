@@ -29,7 +29,13 @@ squeue --json > jobs_2023-03-08.json
 
 ## Listing available resources
 ```bash
-sinfo -o "%20N  %10c  %20m  %30G "
+sinfo -o "%20N  %10c  %20m  %30G %30P"
+```
+
+## What are the job limits?
+```bash
+sacctmgr show qos
+
 ```
 
 ## How to check GPU utilization on a specific machine?
