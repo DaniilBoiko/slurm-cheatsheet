@@ -1,5 +1,6 @@
 # slurm-cheatsheet
 
+
 ## Helpful resources
 * https://slurm.schedmd.com — official docs
 * https://www.sherlock.stanford.edu/docs/user-guide/running-jobs/ — Stenford's Sherlock docs
@@ -40,3 +41,7 @@ sacctmgr show qos
 
 ## How to check GPU utilization on a specific machine?
 You can SSH directly to any machine that is running any of your tasks.
+
+## Dumb questions section
+### Can I move job file after running `sbatch <file>`?
+Yes, it will not affect submitted jobs. Scripts for submitted jobs are copied to another directory.
